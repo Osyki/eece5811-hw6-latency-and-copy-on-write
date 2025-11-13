@@ -66,7 +66,7 @@ Give me the table code in markdown
 I did tested my own hardware to verify these numbers. Here are my findings:
 
 | **Operation** |  **Latency** | **Improvement** |
-|---|---|---|---|
+|---|---|---|
 | L1 cache reference | ~0.6 ns | Similar |
 | Branch mispredict | ~2.1 ns | Improvement, same order of magnitude |
 | L2 cache reference | ~1.3 ns | Improvement, same order of magnitude |
