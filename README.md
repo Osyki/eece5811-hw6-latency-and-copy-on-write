@@ -97,7 +97,7 @@ After researching and testing on my own hardware, the first 3 numbers have barel
 
 ### Q1
 
-Copy-on-write (COW) is an optimization strategy used to efficiently manage memory and resource usage. In fork(), COW delays the copying of physical page tables from a parent process to a child process until it is actually modified. On a fork() call, a page table is created for the child process with entries that reference the same memory location used as the parent process. Only when one of the references attempts to modify the object does the system write a separate physical copy for that reference.
+Copy-on-write (COW) is an optimization strategy used to efficiently manage memory and resource usage. In fork(), COW delays the copying of physical page tables from a parent process to a child process until it is actually modified. On a fork() call, a page table is created for the child process with entries that reference the same memory location used as the parent process. Only when one of the references attempts to modify a page does the system write a separate physical copy for that reference.
 
 ### Q2
 
